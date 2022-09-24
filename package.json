@@ -1,0 +1,12 @@
+{
+    "name": "clipcc-extension-editmr-googlefont",
+    "version": "1.0.0",
+    "author": "Edit Mr. & Skyhigh173",
+    "scripts": {
+        "build": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist && webpack --bail",
+        "build:dist": "NODE_ENV=production npm run build"
+    },
+    "dependencies": {
+        "clipcc-extension": "^0.2.0"
+    }
+}
