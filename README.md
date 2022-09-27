@@ -1,5 +1,5 @@
-# GoogleFont
-支援載入Google Font的ClipCC擴充套件。仍在咕咕中
+# AWP - Advanced Word Printing
+ClipCC擴充套件。支援各種文字打印及載入Google Font。仍在咕咕中
 
 反正想寫出這個功能
 
