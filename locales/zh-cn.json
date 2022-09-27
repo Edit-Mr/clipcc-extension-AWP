@@ -1,6 +1,6 @@
 {
-    "editmr.googlefont.name": "Google Font",
-    "editmr.googlefont.description": "提供支援Google Font",
-    "editmr.googlefont.category": "你好",
-    "editmr.googlefont.hello": "说你好"
+    "em.awp.name": "Advanced Word Printing",
+    "em.awp.description": "A ClipCC word printing extension with multi option and support Google Font",
+    "em.awp.category": "你好",
+    "em.awp.hello": "说你好"
 }

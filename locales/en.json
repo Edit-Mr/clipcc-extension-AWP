@@ -1,6 +1,6 @@
 {
-    "editmr.googlefont.name": "Google Font",
-    "editmr.googlefont.description": "A ClipCC Extension to support Google Font",
-    "editmr.googlefont.category": "Hello",
-    "editmr.googlefont.hello": "say helo"
+    "em.awp.name": "Advanced Word Printing",
+    "em.awp.description": "A ClipCC word printing extension with multi option and support Google Font",
+    "em.awp.category": "Hello",
+    "em.awp.hello": "say helo"
 }

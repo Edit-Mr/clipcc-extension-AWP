@@ -3,15 +3,15 @@ const { Extension, type, api } = require('clipcc-extension');
 class MyExtension extends Extension {
     onInit() {
         api.addCategory({
-            categoryId: 'editmr.googlefont.category',
-            messageId: 'editmr.googlefont.category',
+            categoryId: 'em.awp.category',
+            messageId: 'em.awp.category',
             color: '#66CCFF'
         });
         api.addBlock({
-            opcode: 'editmr.googlefont.hello',
+            opcode: 'em.awp.hello',
             type: type.BlockType.REPORTER,
-            messageId: 'editmr.googlefont.hello',
-            categoryId: 'editmr.googlefont.category',
+            messageId: 'em.awp.hello',
+            categoryId: 'em.awp.category',
             function: () => 'Hello, ClipCC!'
         });
     }
