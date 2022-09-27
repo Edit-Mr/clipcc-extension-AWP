@@ -1,4 +1,4 @@
-const {api, type, extension} = require('clipcc-extension');
+const {api, type, Extension} = require('clipcc-extension');
 class ExampleExtension extends Extension {
     onInit() {
         api.addCategory({
