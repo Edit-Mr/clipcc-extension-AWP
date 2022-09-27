@@ -1,6 +1,7 @@
 {
-    "em.awp.name": "Advanced Word Printing",
-    "em.awp.description": "A ClipCC word printing extension with multi option and support Google Font",
-    "em.awp.category": "Hello",
-    "em.awp.hello": "say helo"
+    "em.awp.name": "Example",
+    "em.awp.category": "Example",
+    "em.awp.description": "ClipCC example extension",
+    "em.awp.return": "return [VALUE]",
+    "em.awp.helloworld": "Hello World!"
 }
