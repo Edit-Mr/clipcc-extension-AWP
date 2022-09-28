@@ -6,7 +6,7 @@ class ExampleExtension extends Extension {
             // 替換為<你的擴充套件id>.category 下同
             categoryId: 'em.awp.category',
             messageId: 'em.awp.category',
-            color: '#81D8D0'
+            color: '#74F7DB'
         });
         api.addBlock({
             opcode: 'em.awp.return',
