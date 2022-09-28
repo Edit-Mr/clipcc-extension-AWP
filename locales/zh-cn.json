@@ -1,6 +1,6 @@
 {
-    "em.awp.name": "Advanced Word Printing",
-    "em.awp.description": "A ClipCC word printing extension with multi option and support Google Font",
-    "em.awp.category": "你好",
+    "em.awp.name": "進階文字列印",
+    "em.awp.description": "有更多選項的文字列印模組。支持Google Font及其他自訂自型",
+    "em.awp.category": "進階文字列印",
     "em.awp.hello": "说你好"
 }
