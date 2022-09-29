@@ -1,6 +1,21 @@
 {
-    "em.awp.name": "Advanced Word Printing",
-    "em.awp.description": "A ClipCC word printing extension with multi option and support Google Font",
-    "em.awp.category": "你好",
-    "em.awp.hello": "说你好"
-}
+     "em.awp.name": "Advanced Text Printing",
+     "em.awp.description": "A powerful text printing extension. AKA: AWP. Supports Google Font and other custom styles.",
+     "em.awp.category": "Advanced Text Printing",
+     "em.awp.addFont": "Load font [NAME] from [URL] and wait",
+      "em.awp.setFont": "Set font to [NAME]",
+       "em.awp.setAlign": "Text is aligned to [XALIGN] [YALIGN]",
+      "em.awp.setFillStyle": "Set text fill color to [COLOR]",
+  "em.awp.strokeStyle": "Set text outline to [COLOR]",
+  "em.awp.setSize": "Set font size to [SIZE] px",
+  "em.awp.setStyle": "The font style is set to [STYLE]",
+  "em.awp.fill": "Insert fill text [TEXT] at X: [X] Y: [Y]",
+  "em.awp.stroke": "Insert hollow text [TEXT] at X: [X] Y: [Y]",
+  "em.awp.getText": "[TYPE] of text [TEXT]",
+  "em.awp.get": "Current [TEXT]",
+ "em.awp.size": "Font size",
+ "em.awp.font": "Font",
+ "em.awp.xAlign": "X align",
+ "em.awp.yAlign": "Y align",
+ "em.awp.clear": "Clear all text"
+ }

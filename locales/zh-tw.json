@@ -1,6 +1,21 @@
 {
     "em.awp.name": "進階文字列印",
-    "em.awp.description": "有更多選項的文字列印模組。支持Google Font及其他自訂自型",
+    "em.awp.description": "強大的文字列印模組AWP。支持Google Font及其他自訂自型。印啦！",
     "em.awp.category": "進階文字列印",
-    "em.awp.addFont": "載入字體 [NAME] 於 [URL] 並等待"
+    "em.awp.addFont": "載入字體 [NAME] 於 [URL] 並等待",
+     "em.awp.setFont": "字型設為 [NAME]",
+      "em.awp.setAlign": "文字向 [XALIGN] [YALIGN] 對齊",
+     "em.awp.setFillStyle": "文字填滿顏色設為 [COLOR]",
+ "em.awp.strokeStyle": "文字外框顏色設為 [COLOR]",
+ "em.awp.setSize": "字體大小設為 [SIZE] 像素",
+ "em.awp.setStyle": "字體風格設為 [STYLE]",
+ "em.awp.fill": "插入填滿文字 [TEXT] 於 X: [X] Y: [Y]",
+ "em.awp.stroke": "插入空心文字 [TEXT] 於 X: [X] Y: [Y]",
+ "em.awp.getText": "文字 [TEXT] 的 ［TYPE］",
+ "em.awp.get": "目前的 [TEXT]",
+"em.awp.size": "字體大小",
+"em.awp.font": "字型",
+"em.awp.xAlign": "X軸對齊方向",
+"em.awp.yAlign": "Y軸對齊方向",
+"em.awp.clear": "清除所有文字"
 }
