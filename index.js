@@ -23,7 +23,7 @@ class ExampleExtension extends Extension {
                 }
             }
             ,
-            function: args => this.addFont(args.FONT)
+            function: args => this.setFont(args.FONT)
         });
         api.addBlock({
             opcode: 'em.awp.addFont',
@@ -62,7 +62,7 @@ class ExampleExtension extends Extension {
                 }
             }
             ,
-            function: args => this.addFont(args.XALIFN, args.YALIGN)
+            function: args => this.setAlign(args.XALIFN, args.YALIGN)
         });
         api.addBlock({
             opcode: 'em.awp.setFillStyle',
@@ -76,7 +76,7 @@ class ExampleExtension extends Extension {
                 },
             }
             ,
-            function: args => this.addFont(args.COLOR)
+            function: args => this.setFillStyle(args.COLOR)
         });
         api.addBlock({
             opcode: 'em.awp.strokeStyle',
@@ -140,10 +140,14 @@ class ExampleExtension extends Extension {
                 Y: {
                     type: type.ParameterType.NUMBER,
                     default: '0'
+                },
+                WIDTH: {
+                    type: type.ParameterType.NUMBER,
+                    default: ''
                 }
             }
             ,
-            function: args => this.fill(args.TEXT, args.X, args.Y)
+            function: args => this.fill(args.TEXT, args.X, args.Y,args.WIDTH)
         });
         api.addBlock({
             opcode: 'em.awp.stroke',
@@ -162,10 +166,14 @@ class ExampleExtension extends Extension {
                 Y: {
                     type: type.ParameterType.NUMBER,
                     default: '0'
+                },
+                WIDTH: {
+                    type: type.ParameterType.NUMBER,
+                    default: ''
                 }
             }
             ,
-            function: args => this.stroke(args.TEXT, args.X, args.Y)
+            function: args => this.stroke(args.TEXT, args.X, args.Y,args.WIDTH)
         });
         api.addBlock({
             opcode: 'em.awp.return',
@@ -229,6 +237,37 @@ class ExampleExtension extends Extension {
           });
 
     }
+}
+
+em.awp.setFont(){
+	 return ;
+}
+em.awp.setAlign(){
+	 return ;
+}
+em.awp.setFillStyle(){
+	 return ;
+}
+em.awp.strokeStyle(){
+	 return ;
+}
+em.awp.setSize(){
+	 return ;
+}
+em.awp.setStyle(){
+	 return ;
+}
+em.awp.fill(){
+	 return ;
+}
+em.awp.stroke(){
+	 return ;
+}
+em.awp.getText(){
+	 return ;
+}
+em.awp.get(){
+	 return ;
 }
 module.exports = ExampleExtension;
 //npm run build
