@@ -17,5 +17,6 @@
     "em.awp.font": "字型",
     "em.awp.xAlign": "X軸對齊方向",
     "em.awp.yAlign": "Y軸對齊方向",
-    "em.awp.clear": "清除所有文字"
+    "em.awp.clear": "清除所有文字",
+    "em.awp.addFontMenu": ""
 }

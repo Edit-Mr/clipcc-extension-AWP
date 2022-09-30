@@ -18,9 +18,9 @@ class ExampleExtension extends Extension {
             categoryId: 'em.awp.category',
             param: {
                 VALUE: {
-                	//list
                     type: type.ParameterType.STRING,
-                    default: 'Hello World!'
+                    default: 'Font',
+                    menu: this.makeMenus('em.awp.getMenu',['Font','X Align','Y Align','Fill Style','Stroke Style','Size','Style'])
                 }
             },
             function: args => this.ReturnValue(args.VALUE)
@@ -33,12 +33,12 @@ class ExampleExtension extends Extension {
             param: {
                 TEXT: {
                     type: type.ParameterType.STRING,
-                    default: 'Roboto'
+                    default: 'Hi'
                 },
                 TYPE: {
-                	//list
                     type: type.ParameterType.STRING,
-                    default: 'color'
+                    default: 'color',
+                    menu: this.makeMenus('em.awp.getTextMenu',['Length','Height'])
                 }
             },
             function: args => this.ReturnValue(args.VALUE)
@@ -65,11 +65,11 @@ class ExampleExtension extends Extension {
             param: {
                 NAME: {
                     type: type.ParameterType.STRING,
-                    default: 'Roboto'
+                    default: 'Pangolin'
                 },
                 URL: {
                     type: type.ParameterType.STRING,
-                    default: 'https://example.com/...'
+                    default: 'https://fonts.gstatic.com/s/pangolin/v6/cY9GfjGcW0FPpi-tWMfN79z4i6BH.woff2'
                 }
             }
             ,
@@ -84,11 +84,13 @@ class ExampleExtension extends Extension {
             	//list
                 XALIFN: {
                     type: type.ParameterType.STRING,
-                    default: '16'
+                    default: 'up',
+                    menu: this.makeMenus('em.awp.addFontMenu',['up','middle','down'])
                 },
                 YALIGN: {
                     type: type.ParameterType.STRING,
-                    default: '2'
+                    default: 'up',
+                    menu: this.makeMenus('em.awp.addFontMenu',['up','middle','down'])
                 }
             }
             ,
@@ -102,7 +104,7 @@ class ExampleExtension extends Extension {
             param: {
                 COLOR: {
                     type: type.ParameterType.STRING,
-                    default: '16'
+                    default: '#000000'
                 },
             }
             ,
