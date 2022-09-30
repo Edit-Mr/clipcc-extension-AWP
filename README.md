@@ -1,21 +1,26 @@
-# AWP - Advanced Word Printing
+<div align="center">
 <img src=assets/logo.PNG width=250>
-ClipCC擴充套件。支援各種文字打印及載入Google Font。仍在咕咕中
 
-反正想寫出這個功能
+![](https://img.shields.io/badge/license-AGPL-blue) ![](https://img.shields.io/badge/version-1.0.0-brightgreen)
+---
+</div>
 
-```javascript
-var f = new FontFace("Lato", /* url */);
-  f.load().then(function() {
-    cxt.textAlign = right
-    cxt.textBaseline = middle
-    ctx.font = "30px sans-serif" //設定文字字型 大小
-    ctx.fillStyle="#00A0E9" //設定文字填滿顏色
-    ctx.strokeStyle="#D50A17" //設定文字邊框
-    ctx.fillText("早安你好", 10, 100)  //填滿文字
-    ctx.strokeText("沒有你更好", 10, 150) //邊框文字
-});
-```
+AWP是一個強大的文字列印 [ClipCC](https://github.com/Clipteam/clipcc-gui) 擴充套件。支持Google Font及其他自訂自型。印啦!<br>
+AWP is a powerful text printing extension. Supports Google Font and other custom styles.
+
+## 功能（建立中）
+* "em.awp.addFont": "載入字體 [NAME] 於 [URL] 並等待
+* "em.awp.setFont": "字型設為 [NAME]
+* "em.awp.setAlign": "文字向 [XALIGN] [YALIGN] 對齊
+* "em.awp.setFillStyle": "文字填滿顏色設為 [COLOR]
+* "em.awp.strokeStyle": "文字外框顏色設為 [COLOR]
+* "em.awp.setSize": "字體大小設為 [SIZE] 像素
+* "em.awp.setStyle": "字體風格設為 [STYLE]
+* "em.awp.fill": "列印填滿文字 [TEXT] 於 X: [X] Y: [Y]
+* "em.awp.stroke": "列印空心文字 [TEXT] 於 X: [X] Y: [Y]
+* "em.awp.getText": "文字 [TEXT] 的 ［TYPE]
+* "em.awp.get": "目前的 [TEXT]
+* 
 
 ## 作者
 * Edit Mr.
