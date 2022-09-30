@@ -1,4 +1,5 @@
 # AWP - Advanced Word Printing
+<img src=assets/logo.PNG width=250>
 ClipCC擴充套件。支援各種文字打印及載入Google Font。仍在咕咕中
 
 反正想寫出這個功能
