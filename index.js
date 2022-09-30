@@ -175,9 +175,9 @@ class ExampleExtension extends Extension {
             function: args => this.addFont(args.NAME, args.URL)
         });
         api.addBlock({
-            opcode: 'em.awp.addFont',
+            opcode: 'em.awp.stroke',
             type: type.BlockType.COMMAND,
-            messageId: 'em.awp.addFont',
+            messageId: 'em.awp.stroke',
             categoryId: 'em.awp.category',
             param: {
                 NAME: {
@@ -193,9 +193,9 @@ class ExampleExtension extends Extension {
             function: args => this.addFont(args.NAME, args.URL)
         });
         api.addBlock({
-            opcode: 'em.awp.addFont',
+            opcode: 'em.awp.getText',
             type: type.BlockType.COMMAND,
-            messageId: 'em.awp.addFont',
+            messageId: 'em.awp.getText',
             categoryId: 'em.awp.category',
             param: {
                 NAME: {
@@ -208,6 +208,103 @@ class ExampleExtension extends Extension {
                 }
             }
             ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.get',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.get',
+            categoryId: 'em.awp.category',
+            param: {
+                NAME: {
+                    type: type.ParameterType.STRING,
+                    default: '16'
+                },
+                URL: {
+                    type: type.ParameterType.STRING,
+                    default: '2'
+                }
+            }
+            ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.size',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.size',
+            categoryId: 'em.awp.category',
+            param: {
+                NAME: {
+                    type: type.ParameterType.STRING,
+                    default: '16'
+                },
+                URL: {
+                    type: type.ParameterType.STRING,
+                    default: '2'
+                }
+            }
+            ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.font',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.font',
+            categoryId: 'em.awp.category',
+            param: {
+                NAME: {
+                    type: type.ParameterType.STRING,
+                    default: '16'
+                },
+                URL: {
+                    type: type.ParameterType.STRING,
+                    default: '2'
+                }
+            }
+            ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.xAlign',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.xAlign',
+            categoryId: 'em.awp.category',
+            param: {
+                NAME: {
+                    type: type.ParameterType.STRING,
+                    default: '16'
+                },
+                URL: {
+                    type: type.ParameterType.STRING,
+                    default: '2'
+                }
+            }
+            ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.yAlign',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.yAlign',
+            categoryId: 'em.awp.category',
+            param: {
+                NAME: {
+                    type: type.ParameterType.STRING,
+                    default: '16'
+                },
+                URL: {
+                    type: type.ParameterType.STRING,
+                    default: '2'
+                }
+            }
+            ,
+            function: args => this.addFont(args.NAME, args.URL)
+        });
+        api.addBlock({
+            opcode: 'em.awp.clear',
+            type: type.BlockType.COMMAND,
+            messageId: 'em.awp.clear',
+            categoryId: 'em.awp.category',
             function: args => this.addFont(args.NAME, args.URL)
         });
     }
