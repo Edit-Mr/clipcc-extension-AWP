@@ -5,7 +5,7 @@
 ---
 </div>
 
-AWP是一個強大的文字列印 [ClipCC](https://github.com/Clipteam/clipcc-gui) 擴充套件。支持Google Font及其他自訂自型。印啦!<br>
+AWP是一個強大的文字列印 [ClipCC](https://github.com/Clipteam/clipcc-gui) [擴充套件](https://github.com/Clipteam/clipcc-extensions-list)。支持Google Font及其他自訂自型。印啦!<br>
 AWP is a powerful text printing extension. Supports Google Font and other custom styles.
 
 ## 功能（建立中）
