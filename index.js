@@ -224,11 +224,11 @@ class ExampleExtension extends Extension {
         return VALUE;
     }
 
-    //應該有問題
+    //應該有問題，改了
     addFont(family, source) {
         let myFont = new FontFace(
             family,
-            "url(${ source })"
+            `url(${ source })`
           );
           
           myFont.load().then((font) => {
