@@ -5,6 +5,17 @@ const { api, type, Extension } = require('clipcc-extension');
 const cvs = api.getStageCanvas();
 class ExampleExtension extends Extension {
     onInit() {
+    /* menu (thanks for 南海蒟蒻) */
+    makeMenus(b, menus) {
+        const menu = [];
+        for (const item of menus) {
+            menu.push({
+                messageId: `${b}.menu.${item}`,
+                value: item
+            });
+        }
+        return menu;
+    }
         api.addCategory({
             // 替換為<你的擴充套件id>.category 下同
             categoryId: 'em.awp.category',
