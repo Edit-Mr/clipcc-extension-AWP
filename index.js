@@ -1,21 +1,7 @@
-
-//This param isn't right yet.
-
-const { api, type, Extension } = require('clipcc-extension');
-const cvs = api.getStageCanvas();
-class ExampleExtension extends Extension {
+const { Extension, type, api } = require('clipcc-extension');
+//yarn build
+class MyExtension extends Extension {
     onInit() {
-    /* menu (thanks for 南海蒟蒻) */
-    makeMenus(b, menus) {
-        const menu = [];
-        for (const item of menus) {
-            menu.push({
-                messageId: `${b}.menu.${item}`,
-                value: item
-            });
-        }
-        return menu;
-    }
         api.addCategory({
             // 替換為<你的擴充套件id>.category 下同
             categoryId: 'em.awp.category',
@@ -60,16 +46,16 @@ class ExampleExtension extends Extension {
             messageId: 'em.awp.addFont',
             categoryId: 'em.awp.category',
             param: {
-            	//list
+                //list
                 XALIFN: {
                     type: type.ParameterType.STRING,
                     default: 'up',
-                    menu: this.makeMenus('em.awp.addFontMenu',['up','middle','down'])
+                    menu: this.makeMenus('em.awp.addFontMenu', ['up', 'middle', 'down'])
                 },
                 YALIGN: {
                     type: type.ParameterType.STRING,
                     default: 'up',
-                    menu: this.makeMenus('em.awp.addFontMenu',['up','middle','down'])
+                    menu: this.makeMenus('em.awp.addFontMenu', ['up', 'middle', 'down'])
                 }
             }
             ,
@@ -99,7 +85,7 @@ class ExampleExtension extends Extension {
                     type: type.ParameterType.STRING,
                     default: '#000000'
                 },
-                
+
             }
             ,
             function: args => this.strokeStyle(args.COLOR)
@@ -114,7 +100,7 @@ class ExampleExtension extends Extension {
                     type: type.ParameterType.NUMBER,
                     default: '16'
                 }
-                
+
             }
             ,
             function: args => this.setSize(args.NAME)
@@ -127,8 +113,8 @@ class ExampleExtension extends Extension {
             param: {
                 STYLE: {
                     type: type.ParameterType.STRING,
-                    default: 'normal'
-                    menu: this.makeMenus('em.awp.addFontMenu',['normal','bold','italic','underline'])
+                    default: 'normal',
+                    menu: this.makeMenus('em.awp.addFontMenu', ['normal', 'bold', 'italic', 'underline'])
                 }
             }
             ,
@@ -158,7 +144,7 @@ class ExampleExtension extends Extension {
                 }
             }
             ,
-            function: args => this.fill(args.TEXT, args.X, args.Y,args.WIDTH)
+            function: args => this.fill(args.TEXT, args.X, args.Y, args.WIDTH)
         });
         api.addBlock({
             opcode: 'em.awp.stroke',
@@ -184,7 +170,7 @@ class ExampleExtension extends Extension {
                 }
             }
             ,
-            function: args => this.stroke(args.TEXT, args.X, args.Y,args.WIDTH)
+            function: args => this.stroke(args.TEXT, args.X, args.Y, args.WIDTH)
         });
         api.addBlock({
             opcode: 'em.awp.return',
@@ -199,10 +185,10 @@ class ExampleExtension extends Extension {
                 TYPE: {
                     type: type.ParameterType.STRING,
                     default: 'color',
-                    menu: this.makeMenus('em.awp.getTextMenu',['Length','Height'])
+                    menu: this.makeMenus('em.awp.getTextMenu', ['Length', 'Height'])
                 }
             },
-            function: args => this.getText(args.TEXT,args.TYPE)
+            function: args => this.getText(args.TEXT, args.TYPE)
         });
         api.addBlock({
             opcode: 'em.awp.get',
@@ -213,7 +199,7 @@ class ExampleExtension extends Extension {
                 VALUE: {
                     type: type.ParameterType.STRING,
                     default: 'Font',
-                    menu: this.makeMenus('em.awp.getMenu',['Font','X Align','Y Align','Fill Style','Stroke Style','Size','Style'])
+                    menu: this.makeMenus('em.awp.getMenu', ['Font', 'X Align', 'Y Align', 'Fill Style', 'Stroke Style', 'Size', 'Style'])
                 }
             },
             function: args => this.get(args.VALUE)
@@ -223,62 +209,52 @@ class ExampleExtension extends Extension {
             type: type.BlockType.COMMAND,
             messageId: 'em.awp.clear',
             categoryId: 'em.awp.category',
-            ,
             function: args => this.clear()
         });
-
+    }
     onUninit() {
         api.removeCategory('em.awp.category');
     }
-
-    ReturnValue(VALUE) {
-        return VALUE;
+    setFont() {
+        return;
     }
-
-    //應該有問題，改了
-    addFont(family, source) {
-        let myFont = new FontFace(
-            family,
-            `url(${ source })`
-          );
-          
-          myFont.load().then((font) => {
-            document.fonts.add(font);
-            console.log("Font loaded");
-          });
-
+    setAlign() {
+        return;
+    }
+    setFillStyle() {
+        return;
+    }
+    strokeStyle() {
+        return;
+    }
+    setSize() {
+        return;
+    }
+    setStyle() {
+        return;
+    }
+    fill() {
+        return;
+    }
+    stroke() {
+        return;
+    }
+    getText() {
+        return;
+    }
+    get() {
+        return;
+    }
+    makeMenus(b, menus) {
+        const menu = [];
+        for (const item of menus) {
+            menu.push({
+                messageId: `${b}.menu.${item}`,
+                value: item
+            });
+        }
+        return menu;
     }
 }
 
-em.awp.setFont(){
-	 return ;
-}
-em.awp.setAlign(){
-	 return ;
-}
-em.awp.setFillStyle(){
-	 return ;
-}
-em.awp.strokeStyle(){
-	 return ;
-}
-em.awp.setSize(){
-	 return ;
-}
-em.awp.setStyle(){
-	 return ;
-}
-em.awp.fill(){
-	 return ;
-}
-em.awp.stroke(){
-	 return ;
-}
-em.awp.getText(){
-	 return ;
-}
-em.awp.get(){
-	 return ;
-}
-module.exports = ExampleExtension;
-//npm run build
+module.exports = MyExtension;
